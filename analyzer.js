@@ -11,7 +11,7 @@ const wordCount = (text) => {
 
 
 const charCount = (text) => {
-    if (text.trim().length <= 0) {
+    if (text === null) {
         return [];
     }
     var chars = new Set(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'f', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']);

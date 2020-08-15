@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.post('/analyze', async (req, res) => {
-    var text = req.body['text'];
+    var text = req.body['text'] ? req.body['text'] : '';
     return res.json({
         textLength: textLength(text),
         wordCount: wordCount(text),
