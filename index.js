@@ -7,6 +7,9 @@ const { textLength, wordCount, charCount } = require('./analyzer');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/health', async (req, res) => {
+    return 'health';
+})
 
 app.post('/analyze', async (req, res) => {
     var text = req.body['text'] ? req.body['text'] : '';
