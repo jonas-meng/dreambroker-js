@@ -1,6 +1,6 @@
 const textLength = (text) => {
     return {
-        withSpace: text !== null ? text.length : 0,
+        withSpaces: text !== null ? text.length : 0,
         withoutSpaces: text !== null ? text.replace(/ /gi, '').length : 0
     };
 }
