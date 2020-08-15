@@ -63,7 +63,7 @@ describe('charCount Test', () => {
         assert.deepEqual(expected, answer);
     });
     it("should return [{ 'a': 2 }, { 'b': 1 }]", () => {
-        var text = [' aba  '];
+        var text = ' aba  ';
         var answer = charCount(text);
         var expected = [{ 'a': 2 }, { 'b': 1 }];
         assert.deepEqual(expected, answer);
