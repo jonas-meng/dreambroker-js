@@ -1,3 +1,11 @@
+language: node_js
+
+jobs:
+  include:
+    - stage: test
+      name: "unit Tests"
+      script: mocha
+
 deploy:
   provider: heroku
   api_key:
